@@ -21,7 +21,7 @@
     console.log(process.env.API_KEY);
     ```
    - Later it will be .gitignore in the github commits.
-- **Level 3 **
+- **Level 3 Hashing the Password**
 - **Level 4 **
 - **Level 5 **
 - **Level 6 **
