@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const mongoose = require("mongoose");
+const encrypt = require('mongoose-encryption');
 
 const app = express();
 
@@ -11,11 +12,22 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect("mongodb://localhost:27017/userDB");
 
-// ----- mongoose schema.
-const userSChema = {
+// ----- simple mongoose schema.
+// const userSChema = {
+//     email: String,
+//     password: String
+// };
+
+//Mongoose schema for password Encryption.
+const userSChema = new mongoose.Schema({
     email: String,
     password: String
-};
+});
+//It will encrypt and decrypt our password automatially.
+const secret = "Thisisourlittlesecret."; //encryption key.
+userSChema.plugin(encrypt,{secret: secret, encryptedFields: ['password']}); 
+
+
 // mongoose model
 const User = mongoose.model("User", userSChema);
 
