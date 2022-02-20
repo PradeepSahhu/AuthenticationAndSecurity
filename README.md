@@ -14,6 +14,14 @@
    - Password will be stored in simple Text which makes it extremely vulnerable of theif and cyber hacking.
 - **Level 2 Mongoose DataBase Encryption**
    - Using mongoose-encryption to encrypt our database password.
+   - To Secure the encryption key, it will be added in the .env file.
+   - We can use it by using the command.
+    ```
+    require('dotenv').config();
+    console.log(process.env.API_KEY);
+    
+    ```
+   - Later it will be .gitignore in the github commits.
 - **Level 3 **
 - **Level 4 **
 - **Level 5 **
