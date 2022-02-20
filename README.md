@@ -19,7 +19,6 @@
     ```
     require('dotenv').config();
     console.log(process.env.API_KEY);
-    
     ```
    - Later it will be .gitignore in the github commits.
 - **Level 3 **
