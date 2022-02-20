@@ -26,6 +26,12 @@
    - Passwords are easy to convert into Hash but almost impossible to convert back into password again because of its complex mathematics which is lots of time consuming.
    - so, How we will check if the real password is real or not while logging? we will convert the password into Hash while logging and then compare Hash with the Hash password which is in our database.
    - Hash can't decode the password, it can only encode.
+  
+  ## Hashing.
+   - npm modules like md5 could to used in our server.
+   - just npm i md45
+   - require it and use it before passoword like md5();
+  
 - **Level 4 **
 - **Level 5 **
 - **Level 6 **
