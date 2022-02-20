@@ -32,7 +32,28 @@
    - just npm i md45
    - require it and use it before passoword like md5();
   
-- **Level 4 **
+- **Level 4 Salting the Hashed password**
+   - Salt Rounds, Salting the password multiple rounds/times.
+   - In this method of encryption salt and hash is stored in the DB.
+   - more salt rounds = more salty = more secure.
+   - Using npm bcrypt.
+   
+   ## Bcrypt npm module
+   -npm i bcrypt
+   ```
+   const bcrypt = require('bcrypt');
+   const saltRounds = 10;
+   const myPlaintextPassword = 's0/\/\P4$$w0rD';
+   
+   bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+    // Store hash in your password DB.
+   });
+   
+   bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
+    // result == true
+   });
+   ```
+   
 - **Level 5 **
 - **Level 6 **
 # Some git commands 
