@@ -12,7 +12,8 @@
 ***There are 6 levels of security in our web.***
 - **Level 1 Basic level, Only Email and password**
    - Password will be stored in simple Text which makes it extremely vulnerable of theif and cyber hacking.
-- **Level 2 **
+- **Level 2 Mongoose DataBase Encryption**
+   - Using mongoose-encryption to encrypt our database password.
 - **Level 3 **
 - **Level 4 **
 - **Level 5 **
