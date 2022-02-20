@@ -39,7 +39,7 @@
    - Using npm bcrypt.
    
    ## Bcrypt npm module
-   -npm i bcrypt
+   - npm i bcrypt
    ```
    const bcrypt = require('bcrypt');
    const saltRounds = 10;
