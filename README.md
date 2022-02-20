@@ -18,3 +18,8 @@
 - **Level 4 **
 - **Level 5 **
 - **Level 6 **
+# Some git commands 
+```
+git pull --rebase origin main
+git push origin main
+```
