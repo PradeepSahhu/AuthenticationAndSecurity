@@ -54,8 +54,20 @@
    });
    ```
    
-- **Level 5 **
-- **Level 6 **
+- **Level 5 Cookies and Sessions**
+   - Using passport, Express-session, passport-local-mongoose module in npm. 
+   - making local cookies and preventing the user from loging again and again.
+   ```
+   const session = require('express-session');
+   const passport = require("passport");
+   const passportLocalMongoose = require("passport-local-mongoose");
+   ```
+- **Level 6 OAuth 2.0 Google Authentication**
+   - using google OAuth 2.0 in passportjs.org
+   ```
+   const GoogleStrategy = require('passport-google-oauth20').Strategy;
+   const findOrCreate = require('mongoose-findorcreate');
+   ```
 # Some git commands 
 ```
 git pull --rebase origin main
